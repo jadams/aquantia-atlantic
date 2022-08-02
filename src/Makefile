@@ -1,11 +1,31 @@
-# SPDX-License-Identifier: GPL-2.0
-# Copyright (c)  2018 Intel Corporation
+# SPDX-License-Identifier: GPL-2.0-only
+################################################################################
+#
+# aQuantia Ethernet Controller AQtion Linux Driver
+# Copyright(c) 2014-2017 aQuantia Corporation.
+#
+# Contact Information: <rdc-drv@aquantia.com>
+# aQuantia Corporation, 105 E. Tasman Dr. San Jose, CA 95134, USA
+#
+################################################################################
 
 #
-# Intel(R) I225-LM/I225-V 2.5G Ethernet Controller
+# Makefile for the AQtion(tm) Ethernet driver
 #
 
-obj-$(CONFIG_IGC) += igc.o
+obj-$(CONFIG_AQTION) += atlantic.o
 
-igc-objs := igc_main.o igc_mac.o igc_i225.o igc_base.o igc_nvm.o igc_phy.o \
-igc_ethtool.o
+atlantic-objs := aq_main.o \
+	aq_nic.o \
+	aq_pci_func.o \
+	aq_vec.o \
+	aq_ring.o \
+	aq_hw_utils.o \
+	aq_ethtool.o \
+	aq_drvinfo.o \
+	aq_filters.o \
+	hw_atl/hw_atl_a0.o \
+	hw_atl/hw_atl_b0.o \
+	hw_atl/hw_atl_utils.o \
+	hw_atl/hw_atl_utils_fw2x.o \
+	hw_atl/hw_atl_llh.o
