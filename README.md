@@ -1,5 +1,5 @@
-# intel-atlantic
-Linux 5.4 kernel driver for  atlantic driver for the Aquantia AQtion AQC107 10 Gigabit Ethernet Controller
+# aquantia-atlantic
+Linux 5.4 kernel driver for atlantic driver for the Aquantia AQtion AQC107 10 Gigabit Ethernet Controller
 
 ## Installation
 
