@@ -7,7 +7,7 @@ Install it from source with:
 
 ```
 git clone https://github.com/jadams/aquantia-atlantic.git
-cd intel-atlantic
+cd aquantia-atlantic
 
 sudo dkms add .
 sudo dkms build atlantic -v 5.4
