@@ -6,7 +6,7 @@ Linux 5.4 kernel driver for atlantic driver for the Aquantia AQtion AQC107 10 Gi
 Install it from source with:
 
 ```
-git clone https://github.com/jadams/intel-atlantic.git
+git clone https://github.com/jadams/aquantia-atlantic.git
 cd intel-atlantic
 
 sudo dkms add .
